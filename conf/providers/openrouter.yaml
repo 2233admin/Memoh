@@ -1918,6 +1918,8 @@ models:
     config:
       compatibilities: [vision, tool-call, reasoning]
       context_window: 262144
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "qwen/qwen3.5-35b-a3b"
     name: "Qwen: Qwen3.5-35B-A3B"
     type: chat
@@ -1940,6 +1942,8 @@ models:
     config:
       compatibilities: [vision, tool-call, reasoning]
       context_window: 262144
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "qwen/qwen3.5-flash-02-23"
     name: "Qwen: Qwen3.5-Flash"
     type: chat
