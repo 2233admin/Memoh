@@ -24,6 +24,8 @@ models:
     config:
       compatibilities: [tool-call]
       context_window: 65536
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "deepseek-ai/DeepSeek-V3.1"
     name: "DeepSeek V3.1"
     type: chat

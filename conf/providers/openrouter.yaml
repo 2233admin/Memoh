@@ -1396,7 +1396,7 @@ models:
       compatibilities: [vision, file-input, tool-call, reasoning]
       context_window: 400000
       thinking_mode: toggle
-      reasoning_efforts: [minimal, low, medium, high]
+      reasoning_efforts: [minimal, disable, low, medium, high, xhigh]
   - model_id: "openai/gpt-5.4"
     name: "OpenAI: GPT-5.4"
     type: chat
@@ -1918,6 +1918,8 @@ models:
     config:
       compatibilities: [vision, tool-call, reasoning]
       context_window: 262144
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "qwen/qwen3.5-35b-a3b"
     name: "Qwen: Qwen3.5-35B-A3B"
     type: chat
@@ -1940,6 +1942,8 @@ models:
     config:
       compatibilities: [vision, tool-call, reasoning]
       context_window: 262144
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "qwen/qwen3.5-flash-02-23"
     name: "Qwen: Qwen3.5-Flash"
     type: chat
@@ -2210,12 +2214,16 @@ models:
     config:
       compatibilities: [vision, tool-call, reasoning]
       context_window: 1048576
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "xiaomi/mimo-v2.5-pro"
     name: "Xiaomi: MiMo-V2.5-Pro"
     type: chat
     config:
       compatibilities: [tool-call, reasoning]
       context_window: 1048576
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "z-ai/glm-4-32b"
     name: "Z.ai: GLM 4 32B "
     type: chat
