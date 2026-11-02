@@ -235,6 +235,8 @@ models:
     type: chat
     config:
       context_window: 128000
+      thinking_mode: toggle
+      reasoning_efforts: [low, medium, high]
   - model_id: "accounts/fireworks/models/deepseek-v3-0324"
     name: "Deepseek V3 0324"
     type: chat
